@@ -1,0 +1,24 @@
+.header {
+    position: relative;
+    max-width: 958px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 175px;
+
+    .logo {
+        margin: 0 auto;
+        width: 100%;
+        img {
+            max-width: 579px;
+            width: 100%;
+        }
+    }
+    .quote-container {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .quote {
+        font-size: 1.125em;
+        text-align: center;
+    }
+}

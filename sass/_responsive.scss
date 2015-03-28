@@ -1,0 +1,31 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 12px;
+    }
+
+   .tabs-container .tab-content .left-content {
+        width: 100%;
+        margin-bottom: 30px;
+   }
+   .footer-container {
+        width: 100%;
+        max-width: 100%;
+        clear: both;
+   }
+
+    .scroll-top-wrapper {
+        &.show {
+            display: none;
+        }
+   }
+    .navbar {
+        padding: 0 10px;
+    }
+   .navbar .nav li {
+        padding: 5px;
+   }
+
+   .navbar.fxd .smaller_logo {
+    display: none;
+   }
+}

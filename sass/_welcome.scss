@@ -1,0 +1,17 @@
+.welcome {
+    max-width: 858px;
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'GillSans-Light', Arial, sans-serif;
+    
+    .welcome-text {
+        padding: 0;
+    }
+    p {
+
+        font-size: 2.250em;
+        line-height: 1.500em;
+        margin-bottom: 25px;
+    }
+}

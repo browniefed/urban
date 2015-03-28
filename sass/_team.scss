@@ -1,0 +1,38 @@
+.team {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    .team-wrap {
+        max-width: 958px;
+        width: 100%;     
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.125em;
+        line-height: 3.000em;
+        width: 100%;
+        text-align: center;
+        padding: 0  0 10px 0;
+        border-bottom: 1px solid $border-color;
+        text-transform: uppercase;
+    }
+    .team-content {
+        margin-top: 56px;
+        width: 100%;
+        display: inline-block
+    }
+    .team-image {
+        padding: 0 30px 30px 30px;
+        float: left;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.813em;
+        margin: 0;
+    }
+}

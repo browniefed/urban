@@ -1,0 +1,49 @@
+.navbar {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 25px 0;
+    transition: top 0.2s ease-in-out;
+
+
+    .nav {
+        float: center;
+    }
+
+    .nav li {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    .nav a {
+        color: $text-color;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    .nav a:hover {
+        border-bottom: 4px solid $highlight-color;
+    }
+    .nav a.active {
+        border-bottom: 2px solid $highlight-color;
+    }
+    .smaller_logo, .social-buttons{
+        display: none;
+    }
+    .social-buttons a {
+        text-decoration: none;
+    }
+    &.fxd {
+        z-index: 100;
+        padding: 25px 0;
+        min-height: 50px;
+        background: #FFF;
+        z-index: 1000;
+        border-bottom: 1px solid #000;
+        margin-top: 0;
+        .smaller_logo, .social-buttons {
+            display: block;
+        }
+    }
+}

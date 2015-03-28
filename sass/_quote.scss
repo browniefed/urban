@@ -1,0 +1,24 @@
+.quotes {
+    background: url("../img/large_quotes.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 658px;
+    padding-top: 280px;
+
+    .quoteslove {
+        opacity: 1;
+        transition: opacity .5s linear;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 958px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3.750em;
+        font-family: 'GillSans-Light', Arial, sans-serif;
+    }
+    .fade-out {
+        opacity: 0;
+    }
+}

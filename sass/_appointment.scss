@@ -1,0 +1,68 @@
+.appointment {
+    margin-top: 75px;
+    display: inline-block;
+    width: 100%;
+    .appointment-wrap {
+        margin: 0 auto;
+        max-width: 958px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.125em;
+        line-height: 3.000em;
+        width: 100%;
+        text-align: center;
+        padding: 0  0 10px 0;
+        border-bottom: 1px solid $border-color;
+    }
+
+    h2 {
+        font-family: 'GillSans-Light', Arial, sans-serif;
+        font-size: 3.000em;
+        line-height: 1.125em;
+    }
+}
+
+.text-booker {
+    display: inline-block;
+    width: 100%;
+    padding: 10%;
+    padding-top: 5.938em;
+}
+
+.book-form, .book-mobile {
+    float: left;
+}
+.book-form {
+    min-width: 50%;
+    margin-bottom: 30px;
+}
+.book-mobile {
+    max-width: 283px;
+    width: 100%;
+}
+
+.loading_text {
+    margin-top: 15px;
+}
+.styled-select select {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    width: 280px;
+    margin-top: 20px;
+    padding: 6px 35px 6px 14px;
+    font-size: 18px;
+    font-family: 'GillSans', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    -webkit-appearance: none;
+    background: #fee6d5 url("../img/btn_arrow_down.png") no-repeat right center;
+    display: block;
+}
+
+.loading_text, .styled-select .select_guests {
+    display: none;
+}
