@@ -147,20 +147,25 @@ body {
 }
 
 /* line 10, ../sass/_global.scss */
+#panel {
+  background: #FFF;
+}
+
+/* line 14, ../sass/_global.scss */
 .section {
   width: 100%;
   background: #FFF;
   min-height: 100px;
 }
 
-/* line 16, ../sass/_global.scss */
+/* line 20, ../sass/_global.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/_global.scss */
+/* line 26, ../sass/_global.scss */
 .button {
   margin-top: 20px;
   background: #fee6d5 url("../img/btn_arrow.png") no-repeat right center;
@@ -173,7 +178,7 @@ body {
   cursor: pointer;
 }
 
-/* line 34, ../sass/_global.scss */
+/* line 38, ../sass/_global.scss */
 .scroll-top-wrapper {
   cursor: pointer;
   position: fixed;
@@ -185,7 +190,7 @@ body {
   right: 10px;
   background: url("../img/back_to_top.png") center top no-repeat;
 }
-/* line 45, ../sass/_global.scss */
+/* line 49, ../sass/_global.scss */
 .scroll-top-wrapper.show {
   display: block;
 }
@@ -278,6 +283,12 @@ body {
 /* line 45, ../sass/_navbar.scss */
 .navbar.isStuck .smaller_logo, .navbar.isStuck .social-buttons {
   display: block;
+}
+
+/* line 51, ../sass/_navbar.scss */
+.navbar-mobile {
+  display: none;
+  z-index: 10000000;
 }
 
 /* line 1, ../sass/_welcome.scss */
@@ -800,47 +811,111 @@ h5 {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 2, ../sass/_responsive.scss */
+  /* line 3, ../sass/_responsive.scss */
   body {
     font-size: 12px;
   }
 
-  /* line 6, ../sass/_responsive.scss */
+  /* line 7, ../sass/_responsive.scss */
   .tabs-container .tab-content .left-content {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  /* line 10, ../sass/_responsive.scss */
+  /* line 11, ../sass/_responsive.scss */
   .footer-container {
     width: 100%;
     max-width: 100%;
     clear: both;
   }
 
-  /* line 17, ../sass/_responsive.scss */
+  /* line 18, ../sass/_responsive.scss */
   .scroll-top-wrapper.show {
     display: none;
   }
 
-  /* line 21, ../sass/_responsive.scss */
+  /* line 22, ../sass/_responsive.scss */
   .navbar {
     display: none;
   }
 
-  /* line 25, ../sass/_responsive.scss */
+  /* line 26, ../sass/_responsive.scss */
   .tabs ul {
     display: none;
   }
 
-  /* line 28, ../sass/_responsive.scss */
+  /* line 29, ../sass/_responsive.scss */
   .tabs select {
     display: inline-block;
     width: 100%;
   }
 
-  /* line 32, ../sass/_responsive.scss */
+  /* line 33, ../sass/_responsive.scss */
   .tabs .location-select-mobile {
     width: 100%;
   }
+
+  /* line 37, ../sass/_responsive.scss */
+  .navbar-mobile {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #FFF;
+    z-index: 1000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  /* line 50, ../sass/_responsive.scss */
+  .navbar-mobile .hamburgernav {
+    float: left;
+  }
+  /* line 53, ../sass/_responsive.scss */
+  .navbar-mobile .booknownav {
+    float: right;
+  }
+  /* line 57, ../sass/_responsive.scss */
+  .navbar-mobile.open {
+    left: 256px;
+  }
+}
+/* line 1, ../sass/_slideout.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../sass/_slideout.scss */
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+/* line 19, ../sass/_slideout.scss */
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 26, ../sass/_slideout.scss */
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+/* line 30, ../sass/_slideout.scss */
+.slideout-open .slideout-menu {
+  display: block;
 }
