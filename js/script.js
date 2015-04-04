@@ -18,6 +18,17 @@ $(document).ready( function() {
 });
     
 (function() {
+
+    var intializedMaps = {};
+    function initMap(map) {
+        if (!intializedMaps[map]){
+            mapFunctions[map]();
+            intializedMaps[map] = true;
+        }
+    }
+
+    initMap('portland');
+
     function debounce(func, wait, immediate) {
         var timeout;
         return function() {
@@ -39,6 +50,14 @@ $(document).ready( function() {
         $('body,html').animate({
             scrollTop: offset.top - 10
         }, 500);
+    });
+
+    $('.changeMenu').on('click', function() {
+        var menu = $(this).attr('id');
+        $('.changeMenu').removeClass('selected');
+        $(this).addClass('selected');
+        $('.cost_menu').hide();
+        $('.' + menu).show();
     })
 
     $(window).on('scroll', debounce(function () {
@@ -49,7 +68,6 @@ $(document).ready( function() {
         }
     }, 20, true));
 
-    // scroll body to 0px on click
     $('#scrolltop').on('click', function () {
         $('body,html').animate({
             scrollTop: 0
@@ -66,9 +84,21 @@ $(document).ready( function() {
         $tabs.find('a').removeClass('active');
         $(this).find('a').addClass('active');
 
+        var id = $(this).attr('id');
         $tabContents.removeClass('visible');
         $tabContents.filter('.' + $(this).attr('id')).addClass('visible');
-    })
+        initMap(id);
+    });
+        
+    $tabsMobileSelect = $('#locationChangeMobile');
+
+    $tabsMobileSelect.on('change', function() {
+        var val = $(this).val();
+        $tabContents.removeClass('visible');
+        $tabContents.filter('.' + $(this).val()).addClass('visible');
+        initMap(val);
+    });
+
 
     var waxLocations = {
         portland: 'http://www.secure-booker.com/urbanwaxx18th/MakeAppointment/Search.aspx',
@@ -90,6 +120,7 @@ $(document).ready( function() {
             setLoadingTextVisibility(hasValue);
         }
     });
+
     $selectGuests.on('change', function() {
         var locVal = $selectLocation.val(),
             guestVal = $selectGuests.val();

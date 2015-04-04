@@ -19,13 +19,17 @@
         }
    }
     .navbar {
-        padding: 0 10px;
+        display: none;
     }
-   .navbar .nav li {
-        padding: 5px;
-   }
 
-   .navbar.fxd .smaller_logo {
-    display: none;
+   .tabs ul {
+        display: none;
+   }
+   .tabs select {
+        display: inline-block;
+        width: 100%;
+   }
+   .tabs .location-select-mobile {
+        width: 100%;
    }
 }

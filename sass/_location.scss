@@ -19,6 +19,9 @@
     position: relative;
     width: 100%;
     background: #FFF;
+    select {
+        display: none;
+    }
     
     ul {
         display: inline-block;

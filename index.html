@@ -111,12 +111,16 @@
                             <h4>Northwest Portland<span> | </span>Division<span> | </span>Tanasbourne<span> | </span>Eugene</h4>
                             <div class="menu_nav">
                                 <ul>
-                                    <li id="nav_women_menu" class="selected">WOMEN</li> 
-                                    <li id="nav_men_menu">MEN</li>
+                                    <li>
+                                        <a id="women_menu" class="selected changeMenu">WOMEN</a> 
+                                    </li>
+                                    <li>
+                                        <a id="men_menu" class="changeMenu">MEN</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- start of women menu -->
-                            <table id="women_menu">
+                            <table class="cost_menu women_menu">
                                 <tbody><tr>
                                     <td class="leftcol"><span>Brazilian Bikini</span></td><td class="rightcol">70</td>
                                 </tr>
@@ -189,7 +193,7 @@
                              <!-- end of women menu -->
 
                              <!-- start of the men menu -->
-                             <table id="men_menu" style="display: none;">
+                             <table style="display: none;" class="men_menu cost_menu">
                                 <tbody><tr>
                                     <td class="leftcol"><span>Basic Bikini</span></td><td class="rightcol">45</td>
                                 </tr>
@@ -303,6 +307,15 @@
 
                 <div class="locations" id="locations">
                  <div class="tabs">
+                        <div class="styled-select location-select-mobile">
+                            <select id="locationChangeMobile">
+                                <option value="portland">NORTHWEST PORTLAND</option>
+                                <option value="division">DIVISION</option>
+                                <option value="tanasborne">TANASBOURNE</option>
+                                <option value="eugene">EUGENE</option>
+                                <option value="timberland">TIMBERLAND</option>
+                            </select>
+                        </div>
                         <ul>
                             <li id="portland">
                                 <a title="Northwest Portland" class="active">NORTHWEST PORTLAND</a>
@@ -353,7 +366,7 @@
                                       </tr>
                                     </tbody></table>
                                 </div>
-                                <div class="right-map-content">
+                                <div class="right-map-content" id="mapPortland">
                                     
                                 </div>
                             </div>
@@ -388,7 +401,7 @@
                                       </tr>
                                     </tbody></table>
                                 </div>
-                                <div class="right-map-content">
+                                <div class="right-map-content" id="mapDivision">
                                     
                                 </div>
                             </div>
@@ -422,7 +435,7 @@
                                       </tr>
                                     </tbody></table>
                                 </div>
-                                 <div class="right-map-content">
+                                 <div class="right-map-content" id="mapTanasbourne">
                                     
                                 </div>
                             </div>
@@ -456,7 +469,7 @@
                                       </tr>
                                     </tbody></table>
                                 </div>
-                                 <div class="right-map-content">
+                                 <div class="right-map-content" id="mapEugene">
                                     
                                 </div>
                             </div>
@@ -481,7 +494,7 @@
                                       </tr>
                                     </tbody></table>
                                 </div>
-                                 <div class="right-map-content">
+                                 <div class="right-map-content" id="mapTimberland">
                                     
                                 </div>
                             </div>
@@ -561,8 +574,9 @@
                         </div>
                     </div>
         </div>
-
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/maps.js"></script>
         <script src="js/jquery.stickUp.js"></script>
         <script src="js/script.js"></script>
     </body>

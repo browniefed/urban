@@ -1,6 +1,9 @@
 .menu {
     position: relative;
     padding: 15px;
+    .changeMenu {
+        cursor: pointer;
+    }
 }
 .centerit {
     margin: 0 auto;
@@ -31,12 +34,16 @@
         display: inline-block;
     }
     li {
-        margin: 0 14px;
-        float: left;
+        margin: 0 5px;
+        display: inline-block;
         list-style: none;
         padding: 0;
-        &.selected {
-        border-bottom: 4px solid $highlight-color;
+    
+        a {
+            text-decoration: none;
+            &.selected {
+                border-bottom: 4px solid $highlight-color;
+            }
         }
     }
 }
