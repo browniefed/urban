@@ -899,11 +899,15 @@ h5 {
   .navbar-mobile .hamburgernav {
     float: left;
   }
-  /* line 53, ../sass/_responsive.scss */
+  /* line 52, ../sass/_responsive.scss */
+  .navbar-mobile .hamburgernav img {
+    width: 33px;
+  }
+  /* line 56, ../sass/_responsive.scss */
   .navbar-mobile .booknownav {
     float: right;
   }
-  /* line 57, ../sass/_responsive.scss */
+  /* line 60, ../sass/_responsive.scss */
   .navbar-mobile.open {
     left: 256px;
   }

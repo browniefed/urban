@@ -215,14 +215,9 @@ $(document).ready( function() {
         }
       });
 
-    $('#hamburger').on('click', function(e) {
+    $('#hamburger, .mobilemenu a').on('click', function(e) {
         e.preventDefault();
         slideout.toggle();
     });
-
-    $('.mobilemenu a').on('click', function(e) {
-        e.preventDefault();
-        slideout.toggle();
-    })
 
 }())
