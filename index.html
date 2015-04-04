@@ -20,21 +20,12 @@
                 <span class="scroll-top-inner"></span>
             </div>
 
-            <div class="header">
+            <div class="header" id="home">
                 <div class="logo">
                     <img src="img/urbanwaxx_logo_wo.png" alt="Urban Waxx Logo">
                 </div>
                 <div class="quote-container">
                     <span class="quote">Your mini-break</span>
-                    <span class="quote" style="display: none;">Luxury you can't live without</span>
-                    <span class="quote" style="display: none;">The best waxx you'll ever have</span>
-                    <span class="quote" style="display: none;">Trust, confidence, connection</span>
-                    <span class="quote" style="display: none;">A secret told with no judgment</span>
-                    <span class="quote" style="display: none;">A mimosa on a Tuesday</span>
-                    <span class="quote" style="display: none;">Say good-bye to your razor</span>
-                    <span class="quote" style="display: none;">Devoted expert care</span>
-                    <span class="quote" style="display: none;">Experience, understanding, integrity</span>
-                    <span class="quote" style="display: none;">You and Us</span>
                 </div>
             </div>
 
@@ -42,31 +33,33 @@
                 <div class="navbar-inner">
                     <ul class="nav">
                         <li>
-                            <img src="img/smalllogo.png" class="smaller_logo" alt="Urban Waxx Logo">
+                            <a href="#home">
+                                <img src="img/smalllogo.png" class="smaller_logo" alt="Urban Waxx Logo">
+                            </a>
                         </li>
                         <li>
-                            <a class="active" href="#home">HOME</a>
+                            <a class="menuItem" href="#home">HOME</a>
                         </li>
                         <li>
-                            <a href="#menu">MENU</a>
+                            <a class="menuItem" href="#menu">MENU</a>
                         </li>
                         <li>
-                            <a href="#appointment">BOOK NOW</a>
+                            <a class="menuItem" href="#booknow">BOOK NOW</a>
                         </li>
                         <li>
-                            <a href="#locations">LOCATIONS</a>
+                            <a class="menuItem" href="#locations">LOCATIONS</a>
                         </li>
                         <li>
-                            <a href="#team">YOUR TEAM</a>
+                            <a class="menuItem" href="#team">YOUR TEAM</a>
                         </li>
                         <li>
-                            <a href="#quotes">LOVE</a>
+                            <a class="menuItem" href="#quotes">LOVE</a>
                         </li>
                         <li>
-                            <a href="/blog/" class="extLink">BLOG</a>
+                            <a href="/blog/" >BLOG</a>
                         </li>
                         <li>
-                            <a href="faq.php" class="extLink">Q&amp;A</a>
+                            <a href="faq.php" >Q&amp;A</a>
                         </li>
                         <li>
                             <div class="social-buttons">
@@ -95,6 +88,7 @@
                 </div>
             </div>
 
+
             <div class="parallax">
                 <img src="img/large_lobby.jpg" />
             </div>
@@ -110,7 +104,7 @@
                 <img src="img/large_marble_background.jpg" />
             </div>
 
-            <div class="menu">
+            <div class="menu" id="menu">
                     <div class="centerit">
                         <div id="text_menu">
                             <img class="menu_logo" src="img/menu_logo.png" alt="Urban Waxx logo">
@@ -307,7 +301,7 @@
                     </div>
                 </div>
 
-                <div class="locations">
+                <div class="locations" id="locations">
                  <div class="tabs">
                         <ul>
                             <li id="portland">
@@ -499,7 +493,7 @@
                     <img src="img/large_computer.jpg" />
                 </div>
 
-                <div class="team">
+                <div class="team" id="team">
                     <div class="team-wrap">
                         <h1>YOUR TEAM</h1>
                         <div class="team-content">
@@ -513,21 +507,9 @@
                     </div>
                 </div>
 
-                <div class="quotes">
-                        <div class="text quoteslove" style="display: none;">There is no waxing place like this anywhere.</div>
-                        <div class="text quoteslove" style="display: none;">I will never go anyplace else.</div>
-                        <div class="text quoteslove" style="display: none;">I booked my next appointment on the spot and will definitely be back!!</div>
-                        <div class="text quoteslove" style="display: none;">I can confidently recommend Urban Waxx to anyone.</div>
-                        <div class="text quoteslove" style="display: none;">I'm completely impressed. Urban Waxx will have my business for all my waxing needs going forward.</div>
-                        <div class="text quoteslove" style="display: none;">An excellent establishment.  Very kind staff and a warm inviting atmosphere.</div>
-                        <div class="text quoteslove" style="display: none;">Very very very happy, and would gladly recommend this to anyone.</div>
-                        <div class="text quoteslove" style="display: none;">Absolutely no awkwardness ever. </div>
-                        <div class="text quoteslove" style="display: none;">Free mimosa while you wait? I was sold when I walked in the door.</div>
-                        <div class="text quoteslove" style="display: none;">Great ambience and customer service.</div>
-                        <div class="text quoteslove" style="display: none;">Go here. Now. Its amazing. I said now!</div>
-                        <div class="text quoteslove" style="display: none;">I kissed all that anxiety away when I discovered Urban Waxx.</div>
-                        <div class="text quoteslove" style="display: none;">Best possible experience.</div>
-                        <div class="text quoteslove" style="display: none;">If there was a 100 star option I would give it to them.</div>
+                <div class="quotes" id="quotes">
+                        <div class="text quoteslove">There is no waxing place like this anywhere.</div>
+
                 </div>
 
 
@@ -581,7 +563,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="js/jquery.smint.js"></script>
+        <script src="js/jquery.stickUp.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

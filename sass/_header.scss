@@ -20,5 +20,6 @@
     .quote {
         font-size: 1.125em;
         text-align: center;
+        @include animation(fadein 4s infinite)
     }
 }

@@ -1,3 +1,22 @@
+
+jQuery(function($) {
+$(document).ready( function() {
+  $('.navbar').stickUp({
+                parts: {
+                  0:'home',
+                  1:'menu',
+                  2: 'booknow',
+                  3: 'locations',
+                  4: 'team',
+                  5: 'quotes'
+                },
+                itemClass: 'menuItem',
+                itemHover: 'active',
+                topMargin: 'auto'
+              });
+    });
+});
+    
 (function() {
     function debounce(func, wait, immediate) {
         var timeout;
@@ -14,6 +33,14 @@
         };
     };
 
+    $('.navbar .menuItem').on('click', function(e) {
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset();
+        $('body,html').animate({
+            scrollTop: offset.top - 10
+        }, 500);
+    })
+
     $(window).on('scroll', debounce(function () {
         if ($(this).scrollTop() > 100) {
             $('#scrolltop').addClass('show');
@@ -29,10 +56,7 @@
         }, 500);
     });
 
-    // $('.navbar').smint({
-    //     'scrollSpeed' : 1000,
-    // });
-    // 
+
     var $locations = $('.locations'),
         $tabs = $locations.find('.tabs li'),
         $tabContents = $locations.find('.tab-content');
@@ -83,33 +107,67 @@
         $loadingText.toggle(visible);
     }
 
+    var topQuotes = [
+                    'Your mini-break',
+                    'Luxury you can\'t live without',
+                    'The best waxx you\'ll ever have',
+                    'Trust, confidence, connection',
+                    'A secret told with no judgment',
+                    'A mimosa on a Tuesday',
+                    'Say good-bye to your razor',
+                    'Devoted expert care',
+                    'Experience, understanding, integrity',
+                    'You and Us'
+                ]
 
-    var $quotesContainer = $('.quotes'),                    
-        $quotes = $quotesContainer.find('.quoteslove'),
-        $nextQuote,
-        index = 0;
+    var $replaceQuote = $('.quote-container .quote'),
+        quoteIndex = 0;
+
+    function getIndex(currentIndex) {
+        var nextIndex = ++currentIndex;
+        if ( nextIndex == (topQuotes.length)) {
+            return 0;
+        }
+        return nextIndex;
+    };
 
     setInterval(function() {
-        hideFadeout($quotes.eq(index));
-        index++;
-        $nextQuote = $quotes.eq(index);
-        if (!$nextQuote.length) {
-            index = 0;
-            $nextQuote = $quotes.eq(index);
+        quoteIndex = getIndex(quoteIndex);
+        $replaceQuote.text(topQuotes[quoteIndex]);
+    }, 4000);
+
+
+
+    var bottomQuotes =  [
+                        'I will never go anyplace else.',
+                        'I booked my next appointment on the spot and will definitely be back!!',
+                        'I can confidently recommend Urban Waxx to anyone.',
+                        'I\'m completely impressed. Urban Waxx will have my business for all my waxing needs going forward.',
+                        'An excellent establishment.  Very kind staff and a warm inviting atmosphere.',
+                        'Very very very happy, and would gladly recommend this to anyone.',
+                        'Absolutely no awkwardness ever.',
+                        'Free mimosa while you wait? I was sold when I walked in the door.',
+                        'Great ambience and customer service.',
+                        'Go here. Now. Its amazing. I said now!',
+                        'I kissed all that anxiety away when I discovered Urban Waxx.',
+                        'Best possible experience.',
+                        'If there was a 100 star option I would give it to them.',
+                    ];
+
+        var $replaceLoveQuote = $('#quotes .quoteslove'),
+            bottomQuoteIndex = 0;
+
+    function getBottomIndex(currentIndex) {
+        var nextIndex = ++currentIndex;
+        if ( nextIndex == (bottomQuotes.length)) {
+            return 0;
         }
-        addFadeout($nextQuote);
-    }, 500);
+        return nextIndex;
+    };
 
-    addFadeout($quotes.eq(0));
-        
-
-    function addFadeout($el) {
-        $el.show().addClass('fade-out');
-    }
-
-    function hideFadeout($el) {
-        $el.hide().removeClass('fade-out');
-    }
-
+    setInterval(function() {
+        bottomQuoteIndex = getBottomIndex(bottomQuoteIndex);
+        $replaceLoveQuote.text(bottomQuotes[quoteIndex]);
+    }, 2000);
 
 }())

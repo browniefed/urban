@@ -59,6 +59,74 @@ table {
   border-spacing: 0;
 }
 
+@-webkit-keyframes fadein {
+  /* line 26, ../sass/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 30, ../sass/_animations.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 34, ../sass/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* line 26, ../sass/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 30, ../sass/_animations.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 34, ../sass/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadein {
+  /* line 26, ../sass/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 30, ../sass/_animations.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 34, ../sass/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  /* line 26, ../sass/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 30, ../sass/_animations.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 34, ../sass/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
 /* line 1, ../sass/_parallax.scss */
 .parallax {
   width: 100%;
@@ -149,6 +217,11 @@ body {
 .header .quote {
   font-size: 1.125em;
   text-align: center;
+  -o-animation: fadein 4s infinite;
+  -moz-animation: fadein 4s infinite;
+  -webkit-animation: fadein 4s infinite;
+  -ms-animation: fadein 4s infinite;
+  animation: fadein 4s infinite;
 }
 
 /* line 1, ../sass/_navbar.scss */
@@ -193,7 +266,7 @@ body {
   text-decoration: none;
 }
 /* line 37, ../sass/_navbar.scss */
-.navbar.fxd {
+.navbar.isStuck {
   z-index: 100;
   padding: 25px 0;
   min-height: 50px;
@@ -203,7 +276,7 @@ body {
   margin-top: 0;
 }
 /* line 45, ../sass/_navbar.scss */
-.navbar.fxd .smaller_logo, .navbar.fxd .social-buttons {
+.navbar.isStuck .smaller_logo, .navbar.isStuck .social-buttons {
   display: block;
 }
 
@@ -553,7 +626,11 @@ h5 {
 /* line 8, ../sass/_quote.scss */
 .quotes .quoteslove {
   opacity: 1;
-  transition: opacity .5s linear;
+  -o-animation: fadein 2s infinite;
+  -moz-animation: fadein 2s infinite;
+  -webkit-animation: fadein 2s infinite;
+  -ms-animation: fadein 2s infinite;
+  animation: fadein 2s infinite;
 }
 /* line 13, ../sass/_quote.scss */
 .quotes .text {
@@ -563,10 +640,6 @@ h5 {
   text-align: center;
   font-size: 3.750em;
   font-family: 'GillSans-Light', Arial, sans-serif;
-}
-/* line 21, ../sass/_quote.scss */
-.quotes .fade-out {
-  opacity: 0;
 }
 
 /* line 1, ../sass/_serum.scss */
