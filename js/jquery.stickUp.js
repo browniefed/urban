@@ -15,21 +15,6 @@ function($) {
         var currentMarginT = 0;
         var topMargin = 0;
 
-        function debounce(func, wait, immediate) {
-            var timeout;
-            return function() {
-                var context = this, args = arguments;
-                var later = function() {
-                    timeout = null;
-                    if (!immediate) func.apply(context, args);
-                };
-                var callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        };
-
         function handleScroll(event){
             var st = $(this).scrollTop();
             if (st > lastScrollTop){
@@ -39,7 +24,7 @@ function($) {
             }
             lastScrollTop = st;
         }
-        $(window).scroll(debounce(handleScroll, 20, true));
+        $(window).scroll(handleScroll);
         $.fn.stickUp = function( options ) {
             // adding a class to users div
             $(this).addClass('stuckMenu');
