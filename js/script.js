@@ -44,7 +44,7 @@ $(document).ready( function() {
         };
     };
 
-    $('.navbar .menuItem').on('click', function(e) {
+    $('.navbar .menuItem, .mobilemenu .mobileMenuItem').on('click', function(e) {
         e.preventDefault();
         var offset = $($(this).attr('href')).offset();
         $('body,html').animate({
@@ -219,5 +219,10 @@ $(document).ready( function() {
         e.preventDefault();
         slideout.toggle();
     });
+
+    $('.mobilemenu a').on('click', function(e) {
+        e.preventDefault();
+        slideout.toggle();
+    })
 
 }())

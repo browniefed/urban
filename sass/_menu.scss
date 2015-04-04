@@ -86,3 +86,28 @@ h5 {
     padding: 0;
     margin: 15px 0;
 }
+
+
+.mobilemenu {
+    border-right: 1px solid #DDD;
+    text-align: center;
+
+    .social-buttons, .smaller_logo {
+        margin-top: 10px;
+    }
+    a {
+          color: #666666;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 1em;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    li {
+        text-align: center;
+        height: 30px;
+    }
+}
