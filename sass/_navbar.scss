@@ -42,6 +42,8 @@
         z-index: 1000;
         border-bottom: 1px solid #000;
         margin-top: 0;
+        position: fixed;
+        top: 0;
         .smaller_logo, .social-buttons {
             display: block;
         }

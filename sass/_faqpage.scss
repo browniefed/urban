@@ -1,0 +1,22 @@
+.faq_page {
+    background: #FFF;
+}
+
+.faq {
+  max-width: 639px;
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+  margin: 0 auto;
+
+  &.sub_text {
+    h5 {
+        text-transform: none;
+        margin: 20px 0 0 0;
+    }
+  }
+  p {
+    border-bottom: 1px solid #fee7d7;
+    padding: 0 0 20px 0;
+  }
+}

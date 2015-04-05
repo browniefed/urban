@@ -425,17 +425,19 @@ body {
   z-index: 1000;
   border-bottom: 1px solid #000;
   margin-top: 0;
+  position: fixed;
+  top: 0;
 }
-/* line 45, ../sass/_navbar.scss */
+/* line 47, ../sass/_navbar.scss */
 .navbar.isStuck .smaller_logo, .navbar.isStuck .social-buttons {
   display: block;
 }
-/* line 50, ../sass/_navbar.scss */
+/* line 52, ../sass/_navbar.scss */
 .navbar .showlogo .smaller_logo, .navbar .showlogo .social-buttons {
   display: block;
 }
 
-/* line 56, ../sass/_navbar.scss */
+/* line 58, ../sass/_navbar.scss */
 .navbar-mobile {
   display: none;
   z-index: 10000000;
@@ -471,7 +473,7 @@ body {
   cursor: pointer;
 }
 
-/* line 9, ../sass/_menu.scss */
+/* line 10, ../sass/_menu.scss */
 .centerit {
   margin: 0 auto;
   padding: 30px;
@@ -483,44 +485,44 @@ body {
   border: 4px solid #fee7d7;
 }
 
-/* line 20, ../sass/_menu.scss */
+/* line 21, ../sass/_menu.scss */
 .menu_logo {
   margin: 50px 0 10px 0;
 }
 
-/* line 24, ../sass/_menu.scss */
+/* line 25, ../sass/_menu.scss */
 .menu h4 {
   font-size: 0.750em;
   line-height: 1.333em;
   margin: 0 0 30px 0;
 }
 
-/* line 30, ../sass/_menu.scss */
+/* line 31, ../sass/_menu.scss */
 .menu_nav {
   text-align: center;
   margin: 0 auto;
 }
-/* line 34, ../sass/_menu.scss */
+/* line 35, ../sass/_menu.scss */
 .menu_nav ul {
   display: inline-block;
 }
-/* line 37, ../sass/_menu.scss */
+/* line 38, ../sass/_menu.scss */
 .menu_nav li {
   margin: 0 5px;
   display: inline-block;
   list-style: none;
   padding: 0;
 }
-/* line 43, ../sass/_menu.scss */
+/* line 44, ../sass/_menu.scss */
 .menu_nav li a {
   text-decoration: none;
 }
-/* line 45, ../sass/_menu.scss */
+/* line 46, ../sass/_menu.scss */
 .menu_nav li a.selected {
   border-bottom: 4px solid #fee7d7;
 }
 
-/* line 52, ../sass/_menu.scss */
+/* line 53, ../sass/_menu.scss */
 .menu table {
   max-width: 510px;
   width: 100%;
@@ -528,12 +530,12 @@ body {
   padding: 0;
   margin: 0 auto;
 }
-/* line 58, ../sass/_menu.scss */
+/* line 59, ../sass/_menu.scss */
 .menu table td {
   line-height: 8px;
   margin: 7px 0;
 }
-/* line 63, ../sass/_menu.scss */
+/* line 64, ../sass/_menu.scss */
 .menu table td.leftcol {
   text-align: left;
   width: 99%;
@@ -542,7 +544,7 @@ body {
   border-bottom: 1px dotted #666;
   padding-top: 20px;
 }
-/* line 72, ../sass/_menu.scss */
+/* line 73, ../sass/_menu.scss */
 .menu table td.rightcol {
   text-align: right;
   width: 1%;
@@ -551,7 +553,7 @@ body {
   padding-top: 20px;
 }
 
-/* line 82, ../sass/_menu.scss */
+/* line 83, ../sass/_menu.scss */
 h5 {
   font-size: 12px;
   font-weight: normal;
@@ -561,30 +563,35 @@ h5 {
   margin: 15px 0;
 }
 
-/* line 92, ../sass/_menu.scss */
+/* line 93, ../sass/_menu.scss */
 .mobilemenu {
   border-right: 1px solid #DDD;
   text-align: center;
 }
-/* line 96, ../sass/_menu.scss */
+/* line 97, ../sass/_menu.scss */
 .mobilemenu .social-buttons, .mobilemenu .smaller_logo {
   margin-top: 10px;
 }
-/* line 99, ../sass/_menu.scss */
+/* line 100, ../sass/_menu.scss */
 .mobilemenu a {
   color: #666666;
   text-decoration: none;
   cursor: pointer;
   font-size: 1em;
 }
-/* line 106, ../sass/_menu.scss */
+/* line 107, ../sass/_menu.scss */
 .mobilemenu ul {
   margin-top: 20px;
 }
-/* line 110, ../sass/_menu.scss */
+/* line 111, ../sass/_menu.scss */
 .mobilemenu li {
   text-align: center;
   height: 30px;
+}
+
+/* line 1, ../sass/_menucomplete.scss */
+.menu_complete {
+  background: #FFF;
 }
 
 /* line 1, ../sass/_appointment.scss */
@@ -1040,6 +1047,91 @@ h5 {
 /* line 63, ../sass/_footer.scss */
 .footer-social .copyright-text {
   margin-top: 15px;
+}
+
+/* line 1, ../sass/_subpage.scss */
+.subheader_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  z-index: -100;
+}
+
+/* line 10, ../sass/_subpage.scss */
+.offset_top {
+  margin-top: 500px;
+}
+
+/* line 14, ../sass/_subpage.scss */
+.sub_intro {
+  background: #fee7d7;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+/* line 22, ../sass/_subpage.scss */
+.sub_intro h5, .sub_text h5 {
+  font-family: 'GillSans', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #666666;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 34, ../sass/_subpage.scss */
+.sub_intro p, .sub_text p {
+  font-family: 'GillSans-Light', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #666666;
+  line-height: 26px;
+  margin: 10px 0;
+}
+/* line 43, ../sass/_subpage.scss */
+.sub_intro a, .sub_text a {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 49, ../sass/_subpage.scss */
+.sub_text {
+  max-width: 639px;
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_faqpage.scss */
+.faq_page {
+  background: #FFF;
+}
+
+/* line 5, ../sass/_faqpage.scss */
+.faq {
+  max-width: 639px;
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+/* line 13, ../sass/_faqpage.scss */
+.faq.sub_text h5 {
+  text-transform: none;
+  margin: 20px 0 0 0;
+}
+/* line 18, ../sass/_faqpage.scss */
+.faq p {
+  border-bottom: 1px solid #fee7d7;
+  padding: 0 0 20px 0;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
