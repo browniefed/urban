@@ -447,15 +447,16 @@ body {
 .welcome {
   max-width: 858px;
   width: 100%;
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 60px 0;
   text-align: center;
   font-family: 'GillSans-Light', Arial, sans-serif;
 }
-/* line 8, ../sass/_welcome.scss */
+/* line 9, ../sass/_welcome.scss */
 .welcome .welcome-text {
   padding: 0;
 }
-/* line 11, ../sass/_welcome.scss */
+/* line 12, ../sass/_welcome.scss */
 .welcome p {
   font-size: 2.250em;
   line-height: 1.500em;
@@ -668,17 +669,18 @@ h5 {
 
 /* line 1, ../sass/_appointment.scss */
 .appointment {
-  margin-top: 75px;
+  padding-top: 75px;
   display: inline-block;
   width: 100%;
+  background: #FFF;
 }
-/* line 5, ../sass/_appointment.scss */
+/* line 6, ../sass/_appointment.scss */
 .appointment .appointment-wrap {
   margin: 0 auto;
   max-width: 958px;
   width: 100%;
 }
-/* line 11, ../sass/_appointment.scss */
+/* line 12, ../sass/_appointment.scss */
 .appointment h1 {
   font-size: 1.125em;
   line-height: 3.000em;
@@ -687,14 +689,14 @@ h5 {
   padding: 0  0 10px 0;
   border-bottom: 1px solid #dfdfdf;
 }
-/* line 20, ../sass/_appointment.scss */
+/* line 21, ../sass/_appointment.scss */
 .appointment h2 {
   font-family: 'GillSans-Light', Arial, sans-serif;
   font-size: 3.000em;
   line-height: 1.125em;
 }
 
-/* line 27, ../sass/_appointment.scss */
+/* line 28, ../sass/_appointment.scss */
 .text-booker {
   display: inline-block;
   width: 100%;
@@ -702,29 +704,29 @@ h5 {
   padding-top: 5.938em;
 }
 
-/* line 34, ../sass/_appointment.scss */
+/* line 35, ../sass/_appointment.scss */
 .book-form, .book-mobile {
   float: left;
 }
 
-/* line 37, ../sass/_appointment.scss */
+/* line 38, ../sass/_appointment.scss */
 .book-form {
   min-width: 50%;
   margin-bottom: 30px;
 }
 
-/* line 41, ../sass/_appointment.scss */
+/* line 42, ../sass/_appointment.scss */
 .book-mobile {
   max-width: 283px;
   width: 100%;
 }
 
-/* line 46, ../sass/_appointment.scss */
+/* line 47, ../sass/_appointment.scss */
 .loading_text {
   margin-top: 15px;
 }
 
-/* line 49, ../sass/_appointment.scss */
+/* line 50, ../sass/_appointment.scss */
 .styled-select select {
   background: transparent;
   border: 0;
@@ -742,7 +744,7 @@ h5 {
   display: block;
 }
 
-/* line 66, ../sass/_appointment.scss */
+/* line 67, ../sass/_appointment.scss */
 .loading_text, .styled-select .select_guests {
   display: none;
 }
