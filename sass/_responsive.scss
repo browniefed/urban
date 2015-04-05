@@ -60,4 +60,19 @@
             left: 256px;
         }
    }
+
+   select.staff_select_mobile {
+    display: inline-block
+   }
+   ul.staff_select_large {
+    display: none;
+   }
+
+
+   .staff_bio_lockup {
+    padding: 20px;
+    img {
+        position: relative;
+    }
+   }
 }

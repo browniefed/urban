@@ -1059,7 +1059,7 @@ h5 {
   z-index: -100;
 }
 /* line 9, ../sass/_subpage.scss */
-.subheader_container img {
+.subheader_container .fill {
   min-height: 500px;
   position: absolute;
   visibility: visible;
@@ -1125,23 +1125,128 @@ h5 {
   background: #FFF;
 }
 
-/* line 5, ../sass/_faqpage.scss */
+/* line 4, ../sass/_faqpage.scss */
+.faq_fill {
+  background: url("../img/faq_header.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* line 9, ../sass/_faqpage.scss */
 .faq {
   max-width: 639px;
   width: 100%;
   text-align: left;
-  padding: 25px 0;
+  padding: 25px;
   margin: 0 auto;
 }
-/* line 13, ../sass/_faqpage.scss */
+/* line 17, ../sass/_faqpage.scss */
 .faq.sub_text h5 {
   text-transform: none;
   margin: 20px 0 0 0;
 }
-/* line 18, ../sass/_faqpage.scss */
+/* line 22, ../sass/_faqpage.scss */
 .faq p {
   border-bottom: 1px solid #fee7d7;
   padding: 0 0 20px 0;
+}
+
+/* line 1, ../sass/_staffpage.scss */
+.staff_page {
+  background: #FFF;
+}
+
+/* line 4, ../sass/_staffpage.scss */
+.staff_fill {
+  background: url("../img/staff_header.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* line 9, ../sass/_staffpage.scss */
+.staff_select_mobile {
+  display: none;
+}
+
+/* line 12, ../sass/_staffpage.scss */
+.staff_selector {
+  text-align: center;
+  margin: 0 auto;
+  height: 80px;
+  max-width: 958px;
+  width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+}
+/* line 21, ../sass/_staffpage.scss */
+.staff_selector .selected {
+  border-bottom: 4px solid #fee7d7;
+}
+/* line 25, ../sass/_staffpage.scss */
+.staff_selector ul {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+/* line 32, ../sass/_staffpage.scss */
+.staff_selector li {
+  margin: 0 14px;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+/* line 39, ../sass/_staffpage.scss */
+.staff_selector a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* line 45, ../sass/_staffpage.scss */
+.staff_categories {
+  position: relative;
+  margin: 0 auto;
+  max-width: 958px;
+  width: 100%;
+}
+/* line 51, ../sass/_staffpage.scss */
+.staff_categories h1 {
+  font-size: 18px;
+  line-height: 55px;
+  color: #666666;
+  width: 100%;
+  text-align: center;
+  padding: 0    0 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 62, ../sass/_staffpage.scss */
+.staff_bio_lockup {
+  position: relative;
+  margin: 56px 0 0 0;
+  border-bottom: 1px solid #dfdfdf;
+  min-height: 380px;
+  padding-left: 320px;
+}
+/* line 68, ../sass/_staffpage.scss */
+.staff_bio_lockup img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fee7d7;
+}
+/* line 74, ../sass/_staffpage.scss */
+.staff_bio_lockup .text {
+  max-width: 459px;
+}
+/* line 77, ../sass/_staffpage.scss */
+.staff_bio_lockup .text p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  margin: 20px 0;
+}
+/* line 83, ../sass/_staffpage.scss */
+.staff_bio_lockup a {
+  color: #666;
+  text-decoration: underline;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -1217,6 +1322,25 @@ h5 {
   /* line 59, ../sass/_responsive.scss */
   .navbar-mobile.open {
     left: 256px;
+  }
+
+  /* line 64, ../sass/_responsive.scss */
+  select.staff_select_mobile {
+    display: inline-block;
+  }
+
+  /* line 67, ../sass/_responsive.scss */
+  ul.staff_select_large {
+    display: none;
+  }
+
+  /* line 72, ../sass/_responsive.scss */
+  .staff_bio_lockup {
+    padding: 20px;
+  }
+  /* line 74, ../sass/_responsive.scss */
+  .staff_bio_lockup img {
+    position: relative;
   }
 }
 /* line 1, ../sass/_slideout.scss */

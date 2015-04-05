@@ -1,12 +1,16 @@
 .faq_page {
     background: #FFF;
 }
+.faq_fill {
+    background: url('../img/faq_header.jpg') 0 0 no-repeat;
+    background-size: cover;
+}
 
 .faq {
   max-width: 639px;
   width: 100%;
   text-align: left;
-  padding: 25px 0;
+  padding: 25px;
   margin: 0 auto;
 
   &.sub_text {
