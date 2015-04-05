@@ -138,68 +138,6 @@ $(document).ready( function() {
         $loadingText.toggle(visible);
     }
 
-    var topQuotes = [
-                    'Your mini-break',
-                    'Luxury you can\'t live without',
-                    'The best waxx you\'ll ever have',
-                    'Trust, confidence, connection',
-                    'A secret told with no judgment',
-                    'A mimosa on a Tuesday',
-                    'Say good-bye to your razor',
-                    'Devoted expert care',
-                    'Experience, understanding, integrity',
-                    'You and Us'
-                ]
-
-    var $replaceQuote = $('.quote-container .quote'),
-        quoteIndex = 0;
-
-    function getIndex(currentIndex) {
-        var nextIndex = ++currentIndex;
-        if ( nextIndex == (topQuotes.length)) {
-            return 0;
-        }
-        return nextIndex;
-    };
-
-    setInterval(function() {
-        quoteIndex = getIndex(quoteIndex);
-        $replaceQuote.text(topQuotes[quoteIndex]);
-    }, 4000);
-
-
-
-    var bottomQuotes =  [
-                        'I will never go anyplace else.',
-                        'I booked my next appointment on the spot and will definitely be back!!',
-                        'I can confidently recommend Urban Waxx to anyone.',
-                        'I\'m completely impressed. Urban Waxx will have my business for all my waxing needs going forward.',
-                        'An excellent establishment.  Very kind staff and a warm inviting atmosphere.',
-                        'Very very very happy, and would gladly recommend this to anyone.',
-                        'Absolutely no awkwardness ever.',
-                        'Free mimosa while you wait? I was sold when I walked in the door.',
-                        'Great ambience and customer service.',
-                        'Go here. Now. Its amazing. I said now!',
-                        'I kissed all that anxiety away when I discovered Urban Waxx.',
-                        'Best possible experience.',
-                        'If there was a 100 star option I would give it to them.',
-                    ];
-
-        var $replaceLoveQuote = $('#quotes .quoteslove'),
-            bottomQuoteIndex = 0;
-
-    function getBottomIndex(currentIndex) {
-        var nextIndex = ++currentIndex;
-        if ( nextIndex == (bottomQuotes.length)) {
-            return 0;
-        }
-        return nextIndex;
-    };
-
-    setInterval(function() {
-        bottomQuoteIndex = getBottomIndex(bottomQuoteIndex);
-        $replaceLoveQuote.text(bottomQuotes[quoteIndex]);
-    }, 2000);
 
     var navbarmobile = $('.navbar-mobile')[0];
     var slideout = new Slideout({
