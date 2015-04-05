@@ -141,20 +141,20 @@
             </div>
             <div class="staff_selector">
                 <ul class="staff_select_large">
-                    <li class="selected"><a href="#">LEADERSHIP TEAM</a></li>
-                    <li class=""><a href="#">WAXXERS</a></li>
-                    <li class=""><a href="#">GUEST EXPERIENCE TEAM</a></li>
+                    <li class="selected"><a href="#" id="bios_leadership">LEADERSHIP TEAM</a></li>
+                    <li class=""><a href="#" id="bios_waxxers">WAXXERS</a></li>
+                    <li class=""><a href="#" id="bios_guest">GUEST EXPERIENCE TEAM</a></li>
                 </ul>
-                <div class="styled-select">
-                    <select id="staff_select_mobile" class="staff_select_mobile">
-                        <option>LEADERSHIP TEAM</option>
-                        <option>WAXXERS</option>
-                        <option>GUEST EXPERIENCE TEAM</option>
+                <div class="styled-select staff_select_mobile">
+                    <select id="staff_select_mobile">
+                        <option value="bios_leadership">LEADERSHIP TEAM</option>
+                        <option value="bios_waxxers">WAXXERS</option>
+                        <option value="bios_guest">GUEST EXPERIENCE TEAM</option>
                     </select>
                 </div>
             </div>
             <div class="staff_categories">
-                <div id="bios_leadership" style="display: block;">
+                <div class="bios_leadership bio_section" style="display: block;">
                     <div class="staff_bio_lockup">
                         <img src="img/bios/01_Shannon_Conley_300x300.jpg">
                         <div class="text">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="bios_waxxers" style="display: none;">
+                <div class="bios_waxxers bio_section" style="display: none;">
                     <h1>PORTLAND LOCATION</h1>
                     <div id="shuffle-pdx">
                         <div class="staff_bio_lockup">
@@ -421,7 +421,7 @@
                     </div>
                 </div>
                 <!-- END WAXXERS -->
-                <div id="bios_guest" style="display: none;">
+                <div class="bios_guest bio_section" style="display: none;">
                     <h1>PORTLAND LOCATION</h1>
                     <div id="shuffle-pdx-guest">
                         <div class="staff_bio_lockup">
@@ -628,6 +628,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="js/slideout.js"></script>
         <script>
         var slideout = new Slideout({
@@ -638,6 +639,22 @@
             onTranslate: function(param, translate) {},
             onTransition: function(param, transition) {}
         });
+
+        $('#staff_select_mobile').on('change', function() {
+            selectSection($(this).val());
+        });
+        $('.staff_select_large a').on('click', function(e) {
+            e.preventDefault();
+            $('.staff_select_large li').removeClass('selected');
+            $(this).parent().addClass('selected');
+            selectSection($(this).attr('id'));
+        });
+
+        function selectSection(selectClass) {
+            $('.bio_section').hide();
+            $('.' + selectClass).show();
+        }
+
         </script>
 </body>
 
