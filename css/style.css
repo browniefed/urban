@@ -1471,6 +1471,50 @@ h5 {
   .staff_bio_lockup img {
     position: relative;
   }
+
+  /* line 88, ../sass/_responsive.scss */
+  .serum {
+    position: relative;
+    max-width: 958px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 93, ../sass/_responsive.scss */
+  .serum h1 {
+    font-size: 1.125em;
+    line-height: 3.000em;
+    width: 100%;
+    text-align: center;
+    padding: 0  0 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  /* line 101, ../sass/_responsive.scss */
+  .serum h2 {
+    font-family: 'GillSans-Light', Arial, sans-serif;
+    font-size: 4.188em;
+    line-height: 0.896em;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  /* line 110, ../sass/_responsive.scss */
+  .serum .serum-content {
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 115, ../sass/_responsive.scss */
+  .serum .serum-content .serum-image {
+    float: none;
+    padding: 0;
+  }
+  /* line 119, ../sass/_responsive.scss */
+  .serum .serum-content .text {
+    float: left;
+    max-width: 470px;
+    width: 100%;
+    padding: 20px;
+  }
 }
 /* line 1, ../sass/_slideout.scss */
 body {
