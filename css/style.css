@@ -316,7 +316,7 @@ body {
   width: 90%;
 }
 /* line 11, ../sass/_header.scss */
-.header .logo img {
+.header .logo svg {
   max-width: 579px;
   width: 100%;
 }
@@ -571,19 +571,20 @@ h5 {
 /* line 97, ../sass/_menu.scss */
 .mobilemenu .social-buttons, .mobilemenu .smaller_logo {
   margin-top: 10px;
+  max-width: 90%;
 }
-/* line 100, ../sass/_menu.scss */
+/* line 101, ../sass/_menu.scss */
 .mobilemenu a {
   color: #666666;
   text-decoration: none;
   cursor: pointer;
   font-size: 1em;
 }
-/* line 107, ../sass/_menu.scss */
+/* line 108, ../sass/_menu.scss */
 .mobilemenu ul {
   margin-top: 20px;
 }
-/* line 111, ../sass/_menu.scss */
+/* line 112, ../sass/_menu.scss */
 .mobilemenu li {
   text-align: center;
   height: 30px;
@@ -1423,40 +1424,48 @@ h5 {
     z-index: 1000;
     border-bottom: 1px solid #000;
     text-align: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
   }
   /* line 49, ../sass/_responsive.scss */
   .navbar-mobile .hamburgernav {
     float: left;
   }
   /* line 51, ../sass/_responsive.scss */
-  .navbar-mobile .hamburgernav img {
+  .navbar-mobile .hamburgernav svg {
     width: 33px;
   }
   /* line 55, ../sass/_responsive.scss */
   .navbar-mobile .booknownav {
     float: right;
+    padding: 6px;
+    margin-top: 1px;
+    background-image: none;
   }
-  /* line 59, ../sass/_responsive.scss */
+  /* line 62, ../sass/_responsive.scss */
   .navbar-mobile.open {
     left: 256px;
   }
+  /* line 65, ../sass/_responsive.scss */
+  .navbar-mobile .smaller_logo {
+    max-width: 200px;
+    height: 31px;
+  }
 
-  /* line 64, ../sass/_responsive.scss */
+  /* line 71, ../sass/_responsive.scss */
   .staff_select_mobile {
     display: inline-block;
   }
 
-  /* line 68, ../sass/_responsive.scss */
+  /* line 75, ../sass/_responsive.scss */
   ul.staff_select_large {
     display: none;
   }
 
-  /* line 73, ../sass/_responsive.scss */
+  /* line 80, ../sass/_responsive.scss */
   .staff_bio_lockup {
     padding: 20px;
   }
-  /* line 75, ../sass/_responsive.scss */
+  /* line 82, ../sass/_responsive.scss */
   .staff_bio_lockup img {
     position: relative;
   }

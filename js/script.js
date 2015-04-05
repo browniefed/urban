@@ -153,9 +153,11 @@ $(document).ready( function() {
         }
       });
 
-    $('#hamburger, .mobilemenu a').on('click', function(e) {
-        e.preventDefault();
-        slideout.toggle();
-    });
+        $('#hamburger, .mobilemenu a').on('click', function(e) {
+            if ($(this).hasClass('mobileMenuItem')) {
+                e.preventDefault();
+            }
+            slideout.toggle();            
+        });
 
 }())

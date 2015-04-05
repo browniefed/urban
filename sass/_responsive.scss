@@ -44,20 +44,27 @@
         z-index: 1000;
         border-bottom: 1px solid #000;
         text-align: center;
-        padding: 10px 20px;
+        padding: 5px 10px;
 
         .hamburgernav {
             float: left;
-            img {
+            svg {
                 width: 33px;
             }
         }
         .booknownav {
             float: right;
+            padding: 6px;
+            margin-top: 1px;
+            background-image: none;
         }
 
         &.open {
             left: 256px;
+        }
+        .smaller_logo {
+            max-width: 200px;
+            height: 31px;
         }
    }
 
