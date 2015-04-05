@@ -590,8 +590,79 @@ h5 {
 }
 
 /* line 1, ../sass/_menucomplete.scss */
-.menu_complete {
+.menu_page {
   background: #FFF;
+}
+
+/* line 4, ../sass/_menucomplete.scss */
+.menu_fill {
+  background: url("../img/menu_header.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* line 12, ../sass/_menucomplete.scss */
+.striped_menu .menu_item {
+  width: 100%;
+  height: 62px;
+  padding: 30px;
+}
+/* line 17, ../sass/_menucomplete.scss */
+.striped_menu .menu_item_inner {
+  max-width: 562px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 21, ../sass/_menucomplete.scss */
+.striped_menu .menu_item_inner .menu_text {
+  float: left;
+}
+/* line 25, ../sass/_menucomplete.scss */
+.striped_menu .menu_item_inner .menu_price {
+  float: right;
+}
+/* line 29, ../sass/_menucomplete.scss */
+.striped_menu .menu_item_inner .menu_option {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'GillSans', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #666666;
+}
+/* line 38, ../sass/_menucomplete.scss */
+.striped_menu > div:nth-child(even) {
+  background: #efefef;
+}
+
+/* line 43, ../sass/_menucomplete.scss */
+.menu_selector {
+  text-align: center;
+  margin: 0 auto;
+  height: 80px;
+}
+/* line 47, ../sass/_menucomplete.scss */
+.menu_selector ul {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+/* line 53, ../sass/_menucomplete.scss */
+.menu_selector li {
+  margin: 0 14px;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+/* line 58, ../sass/_menucomplete.scss */
+.menu_selector li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+}
+/* line 64, ../sass/_menucomplete.scss */
+.menu_selector .selected {
+  border-bottom: 4px solid #fee7d7;
 }
 
 /* line 1, ../sass/_appointment.scss */
