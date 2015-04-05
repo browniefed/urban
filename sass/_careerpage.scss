@@ -1,0 +1,41 @@
+.career_page {
+    background: #FFF;
+
+    h3 {
+          font-family: 'GillSans', Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 18px;
+          color: #666666;
+          line-height: 24px;
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+    }
+
+    h5 {
+        text-transform: none;
+        margin: 20px 0 0 0;
+    }
+
+    .sub_text_info {
+        padding: 20px;
+        p {
+            font-family: 'GillSans-Light', Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            color: #666666;
+            line-height: 26px;
+            margin: 10px 0;
+        }
+        .footnote {
+              display: block;
+            font-size: 12px;
+        }
+    }
+}
+.career_fill {
+    background: url('../img/careers_header.jpg') 0 0 no-repeat;
+    background-size: cover;
+}

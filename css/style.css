@@ -1078,7 +1078,7 @@ h5 {
 .sub_intro {
   background: #fee7d7;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   border: 1px solid #fff;
 }
@@ -1247,6 +1247,53 @@ h5 {
 .staff_bio_lockup a {
   color: #666;
   text-decoration: underline;
+}
+
+/* line 1, ../sass/_careerpage.scss */
+.career_page {
+  background: #FFF;
+}
+/* line 4, ../sass/_careerpage.scss */
+.career_page h3 {
+  font-family: 'GillSans', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #666666;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 16, ../sass/_careerpage.scss */
+.career_page h5 {
+  text-transform: none;
+  margin: 20px 0 0 0;
+}
+/* line 21, ../sass/_careerpage.scss */
+.career_page .sub_text_info {
+  padding: 20px;
+}
+/* line 23, ../sass/_careerpage.scss */
+.career_page .sub_text_info p {
+  font-family: 'GillSans-Light', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #666666;
+  line-height: 26px;
+  margin: 10px 0;
+}
+/* line 32, ../sass/_careerpage.scss */
+.career_page .sub_text_info .footnote {
+  display: block;
+  font-size: 12px;
+}
+
+/* line 38, ../sass/_careerpage.scss */
+.career_fill {
+  background: url("../img/careers_header.jpg") 0 0 no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
