@@ -5,6 +5,16 @@
     right: 0;
     height: 500px;
     z-index: -100;
+
+    img {
+        min-height: 500px;
+        position: absolute; 
+        visibility: visible; 
+        max-width: none; 
+        max-height: 739px; 
+        left: 0; 
+        right: 0;
+    }
 }
 
 .offset_top {

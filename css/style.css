@@ -1058,13 +1058,23 @@ h5 {
   height: 500px;
   z-index: -100;
 }
+/* line 9, ../sass/_subpage.scss */
+.subheader_container img {
+  min-height: 500px;
+  position: absolute;
+  visibility: visible;
+  max-width: none;
+  max-height: 739px;
+  left: 0;
+  right: 0;
+}
 
-/* line 10, ../sass/_subpage.scss */
+/* line 20, ../sass/_subpage.scss */
 .offset_top {
   margin-top: 500px;
 }
 
-/* line 14, ../sass/_subpage.scss */
+/* line 24, ../sass/_subpage.scss */
 .sub_intro {
   background: #fee7d7;
   margin: 0 auto;
@@ -1073,7 +1083,7 @@ h5 {
   border: 1px solid #fff;
 }
 
-/* line 22, ../sass/_subpage.scss */
+/* line 32, ../sass/_subpage.scss */
 .sub_intro h5, .sub_text h5 {
   font-family: 'GillSans', Arial, sans-serif;
   font-weight: normal;
@@ -1085,7 +1095,7 @@ h5 {
   padding: 0;
   text-transform: uppercase;
 }
-/* line 34, ../sass/_subpage.scss */
+/* line 44, ../sass/_subpage.scss */
 .sub_intro p, .sub_text p {
   font-family: 'GillSans-Light', Arial, sans-serif;
   font-weight: normal;
@@ -1095,13 +1105,13 @@ h5 {
   line-height: 26px;
   margin: 10px 0;
 }
-/* line 43, ../sass/_subpage.scss */
+/* line 53, ../sass/_subpage.scss */
 .sub_intro a, .sub_text a {
   color: #666666;
   text-decoration: none;
 }
 
-/* line 49, ../sass/_subpage.scss */
+/* line 59, ../sass/_subpage.scss */
 .sub_text {
   max-width: 639px;
   width: 100%;
