@@ -430,8 +430,12 @@ body {
 .navbar.isStuck .smaller_logo, .navbar.isStuck .social-buttons {
   display: block;
 }
+/* line 50, ../sass/_navbar.scss */
+.navbar .showlogo .smaller_logo, .navbar .showlogo .social-buttons {
+  display: block;
+}
 
-/* line 51, ../sass/_navbar.scss */
+/* line 56, ../sass/_navbar.scss */
 .navbar-mobile {
   display: none;
   z-index: 10000000;
