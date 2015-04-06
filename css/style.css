@@ -1487,7 +1487,7 @@ h5 {
   }
   /* line 91, ../sass/_responsive.scss */
   .navbar-mobile .smaller_logo {
-    max-width: 200px;
+    max-width: 50%;
     height: 31px;
   }
 

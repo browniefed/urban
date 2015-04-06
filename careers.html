@@ -80,7 +80,7 @@
 
         <div class="navbar-mobile">
             <a href="#slideout" id="hamburger" class="hamburgernav"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
-            <a href="#home">
+            <a href="index.html#home">
                 <svg class="smaller_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="579px" height="55px" viewBox="0 0 579 55" enable-background="new 0 0 579 55" xml:space="preserve">
                     <g>
                         <path fill="#333333" d="M1.5,30.345V1.37h2.496v28.824c0,15.604,9.052,20.689,22.162,20.689c13.04,0,21.967-4.805,21.967-20.539   V1.37h2.49v28.761c0,17.26-10.175,23.007-24.538,23.007C11.826,53.138,1.5,47.464,1.5,30.345z"/>
@@ -218,25 +218,6 @@
         </div>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="js/slideout.js"></script>
-        <script>
-
-            var navbarmobile = $('.navbar-mobile')[0];
-            var slideout = new Slideout({
-                'panel': document.getElementById('panel'),
-                'menu': document.getElementById('mobilemenu'),
-                'padding': 256,
-                'tolerance': 70,
-                onTranslate: function(param, translate) {
-                    navbarmobile.style[param] = navbarmobile.style.transform = translate;
-                },
-                onTransition: function(param, transition) {
-                    navbarmobile.style[param] = navbarmobile.style.transition = transition;
-                }
-              });
-
-            $('#hamburger').on('click', function(e) {
-                slideout.toggle();            
-            });
-        </script>
+        <script src="js/subpage.js"></script>
     </body>
 </html>
