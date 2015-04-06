@@ -322,7 +322,7 @@ body {
 }
 /* line 16, ../sass/_header.scss */
 .header .quote-container {
-  margin-top: 15px;
+  margin: 15px 0;
   width: 100%;
   position: relative;
   min-height: 25px;
@@ -545,7 +545,12 @@ body {
   border-bottom: 1px dotted #666;
   padding-top: 20px;
 }
-/* line 73, ../sass/_menu.scss */
+/* line 71, ../sass/_menu.scss */
+.menu table td.leftcol span {
+  background: #FFF;
+  padding-right: 5px;
+}
+/* line 77, ../sass/_menu.scss */
 .menu table td.rightcol {
   text-align: right;
   width: 1%;
@@ -554,7 +559,7 @@ body {
   padding-top: 20px;
 }
 
-/* line 83, ../sass/_menu.scss */
+/* line 87, ../sass/_menu.scss */
 h5 {
   font-size: 12px;
   font-weight: normal;
@@ -564,28 +569,28 @@ h5 {
   margin: 15px 0;
 }
 
-/* line 93, ../sass/_menu.scss */
+/* line 97, ../sass/_menu.scss */
 .mobilemenu {
   border-right: 1px solid #DDD;
   text-align: center;
 }
-/* line 97, ../sass/_menu.scss */
+/* line 101, ../sass/_menu.scss */
 .mobilemenu .social-buttons, .mobilemenu .smaller_logo {
   margin-top: 10px;
   max-width: 90%;
 }
-/* line 101, ../sass/_menu.scss */
+/* line 105, ../sass/_menu.scss */
 .mobilemenu a {
   color: #666666;
   text-decoration: none;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.4em;
 }
-/* line 108, ../sass/_menu.scss */
+/* line 112, ../sass/_menu.scss */
 .mobilemenu ul {
   margin-top: 20px;
 }
-/* line 112, ../sass/_menu.scss */
+/* line 116, ../sass/_menu.scss */
 .mobilemenu li {
   text-align: center;
   height: 30px;
@@ -1043,7 +1048,7 @@ h5 {
 /* line 1, ../sass/_footer.scss */
 .footer {
   border-top: 8px solid #fee7d7;
-  min-height: 192px;
+  min-height: 120px;
   width: 100%;
   background: #121212;
 }
@@ -1053,16 +1058,16 @@ h5 {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  min-height: 192px;
+  min-height: 120px;
 }
 
 /* line 13, ../sass/_footer.scss */
 .footer-container {
   float: left;
-  padding: 5.857em 0;
+  padding: 3.843em 0;
   height: inherit;
-  min-height: 192px;
-  max-height: 192px;
+  min-height: 120px;
+  max-height: 120px;
 }
 
 /* line 20, ../sass/_footer.scss */
@@ -1086,7 +1091,7 @@ h5 {
   background: #1e1e1e;
   max-width: 20%;
   width: 100%;
-  padding: 3.875em 0;
+  padding: 1.875em 0;
 }
 /* line 38, ../sass/_footer.scss */
 .footer-phone p {
@@ -1116,25 +1121,25 @@ h5 {
   background: #272727;
   max-width: 40%;
   width: 100%;
-  padding: 4.875em 0;
+  padding: 1.975em 0;
 }
 /* line 63, ../sass/_footer.scss */
 .footer-social .copyright-text {
   margin-top: 15px;
 }
 
-/* line 1, ../sass/_subpage.scss */
+/* line 3, ../sass/_subpage.scss */
 .subheader_container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 500px;
+  height: 400px;
   z-index: -100;
 }
-/* line 9, ../sass/_subpage.scss */
+/* line 11, ../sass/_subpage.scss */
 .subheader_container .fill {
-  min-height: 500px;
+  min-height: 400px;
   position: absolute;
   visibility: visible;
   max-width: none;
@@ -1143,12 +1148,12 @@ h5 {
   right: 0;
 }
 
-/* line 20, ../sass/_subpage.scss */
+/* line 22, ../sass/_subpage.scss */
 .offset_top {
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
-/* line 24, ../sass/_subpage.scss */
+/* line 26, ../sass/_subpage.scss */
 .sub_intro {
   background: #fee7d7;
   margin: 0 auto;
@@ -1157,7 +1162,7 @@ h5 {
   border: 1px solid #fff;
 }
 
-/* line 32, ../sass/_subpage.scss */
+/* line 34, ../sass/_subpage.scss */
 .sub_intro h5, .sub_text h5 {
   font-family: 'GillSans', Arial, sans-serif;
   font-weight: normal;
@@ -1169,7 +1174,7 @@ h5 {
   padding: 0;
   text-transform: uppercase;
 }
-/* line 44, ../sass/_subpage.scss */
+/* line 46, ../sass/_subpage.scss */
 .sub_intro p, .sub_text p {
   font-family: 'GillSans-Light', Arial, sans-serif;
   font-weight: normal;
@@ -1179,13 +1184,13 @@ h5 {
   line-height: 26px;
   margin: 10px 0;
 }
-/* line 53, ../sass/_subpage.scss */
+/* line 55, ../sass/_subpage.scss */
 .sub_intro a, .sub_text a {
   color: #666666;
   text-decoration: none;
 }
 
-/* line 59, ../sass/_subpage.scss */
+/* line 61, ../sass/_subpage.scss */
 .sub_text {
   max-width: 639px;
   width: 100%;
@@ -1377,45 +1382,68 @@ h5 {
   }
 
   /* line 7, ../sass/_responsive.scss */
+  .parralax-living-room {
+    background: url("../img/large_lobby.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  /* line 12, ../sass/_responsive.scss */
   .tabs-container .tab-content .left-content {
     width: 100%;
     margin-bottom: 30px;
+    padding-right: 0;
   }
 
-  /* line 11, ../sass/_responsive.scss */
+  /* line 17, ../sass/_responsive.scss */
+  .tabs-container .tab-content .right-map-content {
+    width: 100%;
+  }
+
+  /* line 20, ../sass/_responsive.scss */
   .footer-container {
     width: 100%;
     max-width: 100%;
     clear: both;
+    padding: 5em 0;
   }
 
-  /* line 18, ../sass/_responsive.scss */
+  /* line 27, ../sass/_responsive.scss */
+  .footer-phone, .footer-social {
+    padding: 2.5em 0;
+  }
+
+  /* line 32, ../sass/_responsive.scss */
   .scroll-top-wrapper.show {
     display: none;
   }
 
-  /* line 22, ../sass/_responsive.scss */
+  /* line 36, ../sass/_responsive.scss */
   .navbar {
     display: none;
   }
 
-  /* line 26, ../sass/_responsive.scss */
+  /* line 40, ../sass/_responsive.scss */
   .tabs ul {
     display: none;
   }
 
-  /* line 29, ../sass/_responsive.scss */
+  /* line 43, ../sass/_responsive.scss */
   .tabs select {
     display: inline-block;
     width: 100%;
   }
 
-  /* line 33, ../sass/_responsive.scss */
+  /* line 47, ../sass/_responsive.scss */
   .tabs .location-select-mobile {
     width: 100%;
   }
 
-  /* line 37, ../sass/_responsive.scss */
+  /* line 51, ../sass/_responsive.scss */
+  .parralax-sizedown {
+    height: 200px;
+  }
+
+  /* line 55, ../sass/_responsive.scss */
   .navbar-mobile {
     display: inline-block;
     position: fixed;
@@ -1428,58 +1456,58 @@ h5 {
     text-align: center;
     padding: 5px 10px;
   }
-  /* line 49, ../sass/_responsive.scss */
+  /* line 67, ../sass/_responsive.scss */
   .navbar-mobile .hamburgernav {
     float: left;
   }
-  /* line 51, ../sass/_responsive.scss */
+  /* line 69, ../sass/_responsive.scss */
   .navbar-mobile .hamburgernav svg {
     width: 33px;
   }
-  /* line 55, ../sass/_responsive.scss */
+  /* line 73, ../sass/_responsive.scss */
   .navbar-mobile .booknownav {
     float: right;
     padding: 6px;
     margin-top: 1px;
     background-image: none;
   }
-  /* line 62, ../sass/_responsive.scss */
+  /* line 80, ../sass/_responsive.scss */
   .navbar-mobile.open {
     left: 256px;
   }
-  /* line 65, ../sass/_responsive.scss */
+  /* line 83, ../sass/_responsive.scss */
   .navbar-mobile .smaller_logo {
     max-width: 200px;
     height: 31px;
   }
 
-  /* line 71, ../sass/_responsive.scss */
+  /* line 89, ../sass/_responsive.scss */
   .staff_select_mobile {
     display: inline-block;
   }
 
-  /* line 75, ../sass/_responsive.scss */
+  /* line 93, ../sass/_responsive.scss */
   ul.staff_select_large {
     display: none;
   }
 
-  /* line 80, ../sass/_responsive.scss */
+  /* line 98, ../sass/_responsive.scss */
   .staff_bio_lockup {
     padding: 20px;
   }
-  /* line 82, ../sass/_responsive.scss */
+  /* line 100, ../sass/_responsive.scss */
   .staff_bio_lockup img {
     position: relative;
   }
 
-  /* line 88, ../sass/_responsive.scss */
+  /* line 106, ../sass/_responsive.scss */
   .serum {
     position: relative;
     max-width: 958px;
     width: 100%;
     margin: 0 auto;
   }
-  /* line 93, ../sass/_responsive.scss */
+  /* line 111, ../sass/_responsive.scss */
   .serum h1 {
     font-size: 1.125em;
     line-height: 3.000em;
@@ -1488,7 +1516,7 @@ h5 {
     padding: 0  0 10px 0;
     border-bottom: 1px solid #dfdfdf;
   }
-  /* line 101, ../sass/_responsive.scss */
+  /* line 119, ../sass/_responsive.scss */
   .serum h2 {
     font-family: 'GillSans-Light', Arial, sans-serif;
     font-size: 4.188em;
@@ -1497,18 +1525,18 @@ h5 {
     padding: 0;
     margin: 0 0 30px 0;
   }
-  /* line 110, ../sass/_responsive.scss */
+  /* line 128, ../sass/_responsive.scss */
   .serum .serum-content {
     padding: 0;
     width: 100%;
     display: inline-block;
   }
-  /* line 115, ../sass/_responsive.scss */
+  /* line 133, ../sass/_responsive.scss */
   .serum .serum-content .serum-image {
     float: none;
     padding: 0;
   }
-  /* line 119, ../sass/_responsive.scss */
+  /* line 137, ../sass/_responsive.scss */
   .serum .serum-content .text {
     float: left;
     max-width: 470px;

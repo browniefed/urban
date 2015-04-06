@@ -1,6 +1,6 @@
 .footer {
     border-top: 8px solid $highlight-color;
-    min-height: 192px;
+    min-height: 120px;
     width: 100%;
     background: #121212;
 }
@@ -8,14 +8,14 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    min-height: 192px;
+    min-height: 120px;
 }
 .footer-container {
     float: left;
-    padding: 5.857em 0;
+    padding: 3.843em 0;
     height: inherit;
-    min-height: 192px;
-    max-height: 192px;
+    min-height: 120px;
+    max-height: 120px;
 }
 .footer-links a {
     color: $link-color;
@@ -34,7 +34,7 @@
     background: #1e1e1e;
     max-width: 20%;
     width: 100%;
-    padding: 3.875em 0;
+    padding: 1.875em 0;
     p {
         text-align: center;
         font-size: .875em;
@@ -59,7 +59,7 @@
     background: #272727;
     max-width: 40%;
     width: 100%;
-    padding: 4.875em 0;
+    padding: 1.975em 0;
     .copyright-text {
         margin-top: 15px;
     }

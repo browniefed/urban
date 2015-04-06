@@ -4,14 +4,28 @@
         font-size: 12px;
     }
 
+    .parralax-living-room {
+        background: url('../img/large_lobby.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+
    .tabs-container .tab-content .left-content {
         width: 100%;
         margin-bottom: 30px;
+        padding-right: 0;
+   }
+   .tabs-container .tab-content .right-map-content {
+        width: 100%;
    }
    .footer-container {
         width: 100%;
         max-width: 100%;
         clear: both;
+        padding: 5em 0;
+   }
+
+   .footer-phone, .footer-social {
+        padding: 2.5em 0;
    }
 
     .scroll-top-wrapper {
@@ -32,6 +46,10 @@
    }
    .tabs .location-select-mobile {
         width: 100%;
+   }
+
+   .parralax-sizedown {
+        height: 200px;
    }
 
    .navbar-mobile {

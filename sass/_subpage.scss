@@ -1,13 +1,15 @@
+$page_offset: 400px;
+
 .subheader_container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 500px;
+    height: $page_offset;
     z-index: -100;
 
     .fill {
-        min-height: 500px;
+        min-height: $page_offset;
         position: absolute; 
         visibility: visible; 
         max-width: none; 
@@ -18,7 +20,7 @@
 }
 
 .offset_top {
-    margin-top: 500px;
+    margin-top: $page_offset;
 }
 
 .sub_intro {

@@ -68,6 +68,10 @@
         text-transform: uppercase;
         border-bottom: 1px dotted #666;
         padding-top: 20px;
+        span {
+            background: #FFF;
+            padding-right: 5px;
+        }
     }
 
     td.rightcol {
@@ -102,7 +106,7 @@ h5 {
           color: #666666;
           text-decoration: none;
           cursor: pointer;
-          font-size: 1em;
+          font-size: 1.4em;
     }
 
     ul {

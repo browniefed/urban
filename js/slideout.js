@@ -94,8 +94,8 @@ Slideout.prototype.close = function() {
   this._opened = false;
   setTimeout(function() {
     html.className = html.className.replace(/ slideout-open/, '');
-    self.panel.style.transition = self.panel.style['-webkit-transition'] = '';
-    self.onTransition('-webkit-transition', '');
+    self.panel.style.transition = self.panel.style['-webkit-transition'] = 'none';
+    self.panel.style[prefix + 'transform'] = this.panel.style.transform = 'none';
   }, this._duration + 50);
   return this;
 };
