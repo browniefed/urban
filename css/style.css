@@ -594,7 +594,7 @@ h5 {
 /* line 116, ../sass/_menu.scss */
 .mobilemenu li {
   text-align: center;
-  height: 30px;
+  height: 32px;
 }
 
 /* line 1, ../sass/_menucomplete.scss */
@@ -1462,7 +1462,7 @@ h5 {
     height: 48px;
     background: #FFF;
     z-index: 1000;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 9px 10px;
   }
