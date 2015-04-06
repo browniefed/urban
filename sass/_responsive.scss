@@ -24,6 +24,14 @@
         padding: 5em 0;
    }
 
+   .welcome {
+        margin-top: 0;
+
+        .welcome-text {
+            padding: 0 10px;
+        }
+   }
+
    .footer-phone, .footer-social {
         padding: 2.5em 0;
    }
