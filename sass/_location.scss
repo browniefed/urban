@@ -97,13 +97,20 @@
             background: #000;
         }
         table {
-            width: 100%;
+          width: 100%;
         }
         th, td {
-            margin: 10px 25px;
-            text-align: left;
-            color: $text-color;
-            font-size: 0.938em;
+          padding: 0;
+          text-align: left;
+          font-family: 'GillSans', Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          color: #666666;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        td.middle, th.middle {
+          width: 30%;
         }
     }
 }
