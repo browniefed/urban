@@ -6,4 +6,18 @@
         $(this).parent().addClass('selected');
         $('.' + $(this).attr('id')).show();
     });
+
+   	$('.openpopup').click(function(){
+		var mymodal = new jBox('Modal', {
+		    content: $('#' + $(this).attr('data-id')),
+		    width: 310,
+		    minHeight: 195, 
+		    overlay: false,
+		    fade: 100,
+		    closeOnClick: true,
+		    closeButton: false,
+		    ignoreDelay: true,
+		}); 
+		mymodal.toggle();       		
+	});
 }())

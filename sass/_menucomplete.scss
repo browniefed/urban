@@ -6,6 +6,17 @@
     background-size: cover;
 }
 
+.custom_tooltop {
+  margin: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0;
+  background: #fff;
+    p {
+        display: block;
+        margin: 13px 0;
+    }
+}
 
 .striped_menu {
 
@@ -21,6 +32,7 @@
         .menu_text {
             margin-top: -4px;
             float: left;
+            cursor: pointer;
         }
         .menu_price {
             float: right;
