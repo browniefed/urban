@@ -7,15 +7,17 @@
     }
 }
 
-.mini-logo-nav {
-  width: 173px;
-  height: 16px;
-  position: relative;
-    a {
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 3px;
+.isStucck {
+    .mini-logo-nav {
+      width: 173px;
+      height: 16px;
+      position: relative;
+        a {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
     }
 }
 
