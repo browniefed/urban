@@ -1,6 +1,11 @@
 
 jQuery(function($) {
 $(document).ready( function() {
+
+    var additionalOffset = $('.navbar').outerHeight();
+    if (!$('.navbar-mobile').is(':hidden')) {
+        additionalOffset = $('.navbar-mobile').outerHeight();
+    }
   $('.navbar').stickUp({
                 parts: {
                   0:'home',
@@ -12,7 +17,7 @@ $(document).ready( function() {
                 },
                 itemClass: 'menuItem',
                 itemHover: 'active',
-                topMargin: 'auto'
+                topMargin: additionalOffset + 30
               });
     });
 });
@@ -47,8 +52,13 @@ $(document).ready( function() {
     $('.navbar .menuItem, .mobilemenu .mobileMenuItem').on('click', function(e) {
         e.preventDefault();
         var offset = $($(this).attr('href')).offset();
+        var additionalOffset = $('.navbar').outerHeight();
+        if (!$('.navbar-mobile').is(':hidden')) {
+            additionalOffset = $('.navbar-mobile').outerHeight();
+        }
+
         $('body,html').animate({
-            scrollTop: offset.top - 10
+            scrollTop: offset.top - additionalOffset
         }, 500);
     });
 
